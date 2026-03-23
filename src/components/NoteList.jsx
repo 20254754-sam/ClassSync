@@ -5,7 +5,9 @@ const NoteList = ({ notes }) => {
   return (
     <div className="note-list">
       {notes.map(note => (
-        <NoteCard key={note.id} note={note} />
+        <div key={note.id} className="note-item">
+          <NoteCard note={note} />
+        </div>
       ))}
     </div>
   );

@@ -694,3 +694,32 @@ button::after {
     font-size: 1rem;
   }
 }
+
+/* ===== NOTECARD CLICK FIX ===== */
+.note-card {
+  display: block !important;
+  position: relative !important;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.note-card-inner {
+  width: 100%;
+  height: 100%;
+}
+
+.note-item {
+  position: relative;
+}
+
+.note-list {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)) !important;
+  gap: 2rem !important;
+}
+
+/* ===== LINK FOCUS FIX ===== */
+.note-card:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+}
